@@ -7,7 +7,7 @@ var mongoose = require("mongoose")
 
 var app = express();
 var router =  express.Router()
-var db = require("./Models");
+var db = require("./Models/index");
 require("./Routes/apiroutes")(router);
 
 var port =  process.env.PORT || 3000
