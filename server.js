@@ -31,6 +31,15 @@ var MONGODB_URI = process.env.MONGODB_URI || "mongodb://localhost/discussion";
 
 mongoose.connect(MONGODB_URI, { useNewUrlParser: true })
 
+app.get("/", function(req, res) {
+  res.render("home");
+});
+
+app.get("/discussions", function(req, res) {
+  res.render("articles");
+});
+
+
 app.get("/all", function(req, res) {
   db.Article.find({}, function(error, found) {
   if (error) {
