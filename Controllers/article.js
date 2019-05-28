@@ -1,12 +1,12 @@
-var article = require("../Models/article")
+// var article = require("../Models/article")
 
-module.exports = {
-    delete: function(query, cb) {
-        article.remove(query, cb)
-    },
+// module.exports = {
+//     delete: function(query, cb) {
+//         article.remove(query, cb)
+//     },
     
-    get: function(query,  cb) {
-        article.find({})
-    }  
+//     get: function(query,  cb) {
+//         article.find({})
+//     }  
 
-}
+// }

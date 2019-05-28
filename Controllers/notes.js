@@ -1,4 +1,4 @@
-var note = require("../Models/notes")
+var note = require("../Models/Note")
 
 module.exports = {
 
@@ -27,3 +27,5 @@ post : ("/submit", function(req, res) {
       res.json(err);
     });
 })
+
+}
